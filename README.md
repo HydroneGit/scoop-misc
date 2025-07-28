@@ -1,4 +1,4 @@
-# Scoop Misc
+# scoop-misc
 
 Bucket with misc apps.
 
@@ -12,5 +12,4 @@ In Scoop, run the following:
 
 ```pwsh
 scoop bucket add misc https://github.com/HydroneGit/scoop-misc.git
-scoop install misc/<manifestname>
 ```
