@@ -1,0 +1,40 @@
+{
+    "version": "1.0.8",
+    "description": "Dolphin fork intended to give Metroid Prime Trilogy mouselook controls",
+    "homepage": "https://forums.dolphin-emu.org/Thread-fork-primehack-fps-controls-and-more-for-metroid-prime",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/shiiion/dolphin/blob/primehack-master/COPYING"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shiiion/dolphin/releases/download/1.0.8/PrimeHack.Release.v1.0.8.zip",
+            "hash": "c1bc75e6c51096fb589416adb3ef865a60dfde99c610aef157ec3e7cc6a67f74"
+        }
+    },
+    "pre_install": [
+        "$appdataPath = \"$Env:AppData\\Dolphin Emulator\"",
+        "if ((Test-Path -Path $appdataPath\\*) -and (!(Test-Path -Path $persist_dir\\*))) {",
+        "   Write-Warning \"Migrating AppData...\"",
+        "   New-Item -Type Directory -Path $persist_dir\\User -Force | Out-Null",
+        "   Copy-Item -Recurse -Force $appdataPath\\* -Destination $persist_dir\\User\\",
+        "}"
+    ],
+    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+    "bin": "Dolphin.exe",
+    "shortcuts": [
+        "Dolphin.exe",
+        "PrimeHack"
+    ],
+    "persist": "User",
+    "checkver": {
+        "github": "https://github.com/shiiion/dolphin/releases/latest"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shiiion/dolphin/releases/download/$version/PrimeHack.Release.v$version.zip"
+            }
+        }
+    }
+}
