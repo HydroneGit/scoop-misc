@@ -14,7 +14,7 @@
                     "Demucs-GUI.exe",
                     "Demucs GUI (Cuda)"
                 ]
-            ],
+            ]
         }
     },
     "autoupdate": {
