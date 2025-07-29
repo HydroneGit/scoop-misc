@@ -8,7 +8,7 @@ PrimeHack
 
 ## How To Use This Bucket:
 
-In Scoop, run the following:
+In your terminal, run the following:
 
 ```pwsh
 scoop bucket add misc https://github.com/HydroneGit/scoop-misc.git
