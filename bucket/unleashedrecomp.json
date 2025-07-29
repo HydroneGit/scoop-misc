@@ -12,18 +12,10 @@
             "hash": "65793fbf3bfa392703275d3a1759bea20bc3d62f3bb39b066b85e5e7fb2d5d32"
         }
     },
-    "pre_install": [
-        "$appdataPath = \"$Env:AppData\\UnleashedRecomp\"",
-        "if ((Test-Path -Path $appdataPath\\*) -and (!(Test-Path -Path $persist_dir\\*))) {",
-        "   Write-Warning \"Migrating AppData...\"",
-        "   New-Item -Type Directory -Path $persist_dir\\save -Force | Out-Null",
-        "   Copy-Item -Recurse -Force $appdataPath\\save\\* -Destination $persist_dir\\save\\",
-        "   New-Item -Type File -Path $persist_dir\\config.toml -Force | Out-Null",
-        "   Copy-Item -Recurse -Force $appdataPath\\config.toml -Destination $persist_dir\\",
-        "}"
-    ],
     "post_install": [
-        "Set-Content -Value $null -Path \"$dir\\portable.txt\""
+        "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+        "Set-Content -Value $null -Path \"$dir\\config.txt\"",
+        "Rename-Item -Path \"$dir\\config.txt\" -NewName \"config.toml\""
     ],
     "bin": "UnleashedRecomp.exe",
     "shortcuts": [
