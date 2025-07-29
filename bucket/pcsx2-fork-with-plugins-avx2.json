@@ -1,12 +1,12 @@
 {
-    "version": "release",
+    "version": "latest",
     "description": "PCSX2 fork with support for plugins by ThirteenAG",
     "homepage": "https://github.com/ASI-Factory/PCSX2-Fork-With-Plugins",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/ASI-Factory/PCSX2-Fork-With-Plugins/releases/download/latest/PCSX2Fork-Windows-x64-Clang-AVX2.zip",
-            "hash": "d0ad323bfe34ce6b2a3c28fb6170d0588fb9a130ca5dd0f75d38b0074ecd6c9b",
+            "hash": "sha256:d0ad323bfe34ce6b2a3c28fb6170d0588fb9a130ca5dd0f75d38b0074ecd6c9b",
             "shortcuts": [
                 [
                     "pcsx2-qtx64-avx2-clang.exe",
