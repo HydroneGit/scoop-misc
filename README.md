@@ -4,9 +4,11 @@ Bucket with misc apps.
 
 ## Apps Included (A-Z):
 
-Demucs GUI (CUDA)
+demucs-gui-cuda
 
-PrimeHack
+primehack
+
+xdvdfs
 
 ## How To Use This Bucket:
 
