@@ -16,11 +16,15 @@
         "$appdataPath = \"$Env:AppData\\UnleashedRecomp\"",
         "if ((Test-Path -Path $appdataPath\\*) -and (!(Test-Path -Path $persist_dir\\*))) {",
         "   Write-Warning \"Migrating AppData...\"",
-        "   New-Item -Type Directory -Path $persist_dir\\User -Force | Out-Null",
-        "   Copy-Item -Recurse -Force $appdataPath\\* -Destination $persist_dir\\User\\",
+        "   New-Item -Type Directory -Path $persist_dir\\save -Force | Out-Null",
+        "   Copy-Item -Recurse -Force $appdataPath\\save\\* -Destination $persist_dir\\save\\",
+        "   New-Item -Type File -Path $persist_dir\\config.toml -Force | Out-Null",
+        "   Copy-Item -Recurse -Force $appdataPath\\config.toml -Destination $persist_dir\\"
         "}"
     ],
-    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+    "post_install": [
+        "Set-Content -Value $null -Path \"$dir\\portable.txt\""
+    ],
     "bin": "UnleashedRecomp.exe",
     "shortcuts": [
         [
