@@ -41,7 +41,7 @@
         "shaders\\GSdx_FX_Settings.ini",
         "snaps",
         "sstates",
-        "PLUGINS"
+        "PLUGINS",
         "QtPlugins"
-    ],
+    ]
 }
