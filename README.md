@@ -4,6 +4,7 @@ Bucket with misc apps.
 
 ## Apps Included (A-Z):
 
+Demucs GUI (CUDA)
 PrimeHack
 
 ## How To Use This Bucket:
