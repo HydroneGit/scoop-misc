@@ -1,0 +1,28 @@
+{
+    "version": "v0.8.2",
+    "description": "Original Xbox DVD Filesystem library and management tool",
+    "homepage": "https://github.com/antangelo/xdvdfs",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/antangelo/xdvdfs/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/antangelo/xdvdfs/releases/download/v0.8.2/xdvdfs-windows-98dc59e61276c1fc518e643cb7a2b7935d80c783.zip",
+            "hash": "de9a5e87e6c8f270623212dd676c78cc54cd715237cf8ac5f801ddd1ee0ff977"
+        }
+    },
+    "bin": "xdvdfs.exe",
+    "checkver": {
+        "url": "https://github.com/antangelo/xdvdfs/releases/latest",
+        "regex": "\"version\":\"(?<version>.*?)\".*\"commitId\":\"(?<commit>.{7}).*\""
+    },
+
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/antangelo/xdvdfs/releases/download/$matchVersion/xdvdfs-windows-$matchCommit.zip"
+            }
+        }
+    }
+}
