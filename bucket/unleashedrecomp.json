@@ -19,7 +19,7 @@
         "   New-Item -Type Directory -Path $persist_dir\\save -Force | Out-Null",
         "   Copy-Item -Recurse -Force $appdataPath\\save\\* -Destination $persist_dir\\save\\",
         "   New-Item -Type File -Path $persist_dir\\config.toml -Force | Out-Null",
-        "   Copy-Item -Recurse -Force $appdataPath\\config.toml -Destination $persist_dir\\"
+        "   Copy-Item -Recurse -Force $appdataPath\\config.toml -Destination $persist_dir\\",
         "}"
     ],
     "post_install": [
