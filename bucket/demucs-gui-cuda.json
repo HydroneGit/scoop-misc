@@ -14,9 +14,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://demucs-gui.carlgao4.workers.dev/files/Demucs-GUI_$version_cuda_mkl.7z",
-                "hash": {
-                    "url": "https://demucs-gui.carlgao4.workers.dev/files/Demucs-GUI_$version_cuda_mkl.7z.sha512"
-                },
                 "extract_dir": "Demucs-GUI_$version_cuda_mkl"
             }
         }
