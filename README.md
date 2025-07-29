@@ -6,7 +6,11 @@ Bucket with misc apps.
 
 demucs-gui-cuda
 
+pcsx2-fork-with-plugins-avx2
+
 primehack
+
+unleashedrecomp
 
 xdvdfs
 
