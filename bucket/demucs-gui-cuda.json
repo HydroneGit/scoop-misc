@@ -9,6 +9,6 @@
             "url": "https://demucs-gui.carlgao4.workers.dev/files/Demucs-GUI_2.0a1_cuda_mkl.7z",
             "hash": "sha512:8A71F8089CF2C9BFFAC73F05C6024A99E2D095BBB6771FBB2D49E35B18902812F79A6DA497206FEDE7BE7C435F681FE63FFA9FA613556C82BFBDA39B02613475",
             "extract_dir": "Demucs-GUI_2.0a1_cuda_mkl"
-        },
+        }
     }
 }
