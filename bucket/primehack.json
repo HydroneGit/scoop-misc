@@ -6,7 +6,10 @@
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/shiiion/dolphin/blob/primehack-master/COPYING"
     },
-    "notes": "NOTE: No shim is included, as it might conflict with another installation of Dolphin.",
+    "notes": [
+        "WARNING: This app will overwrite the existing Dolphin shim!",
+        "Reset your Dolphin app after installing to make Dolphin's shim take priority."
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/shiiion/dolphin/releases/download/1.0.8/PrimeHack.Release.v1.0.8.zip",
@@ -14,6 +17,7 @@
         }
     },
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+    "bin": "Dolphin.exe",
     "shortcuts": [
         [
         "Dolphin.exe",
