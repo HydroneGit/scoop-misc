@@ -12,7 +12,7 @@
             "hash": "65793fbf3bfa392703275d3a1759bea20bc3d62f3bb39b066b85e5e7fb2d5d32"
         }
     },
-    "post_install": [
+    "pre_install": [
         "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
         "Set-Content -Value $null -Path \"$dir\\config.txt\"",
         "Rename-Item -Path \"$dir\\config.txt\" -NewName \"config.toml\""
