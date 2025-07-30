@@ -29,7 +29,8 @@
         "patched",
         "save",
         "update",
-        "config.toml"
+        "config.toml",
+        "dlc"
     ],
     "checkver": {
         "github": "https://github.com/hedge-dev/UnleashedRecomp/releases/latest"
