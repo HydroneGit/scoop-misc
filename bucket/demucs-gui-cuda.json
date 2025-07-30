@@ -3,7 +3,7 @@
     "description": "A GUI for music separation AI demucs",
     "homepage": "https://github.com/CarlGao4/Demucs-Gui",
     "license": "GPL-3.0",
-    "notes": "Follow directions of release 1.3.2.1 on Demucs-Gui Github page if using Blackwell architecture GPU",
+    "notes": "if using Blackwell architecture GPU, follow directions of release 1.3.2.1 on Demucs-Gui Github page",
     "architecture": {
         "64bit": {
             "url": "https://github.com/CarlGao4/Demucs-Gui/releases/download/1.3.2/Demucs-GUI_1.3.2_cuda_mkl.7z",
@@ -16,6 +16,9 @@
                 ]
             ]
         }
+    },
+    "checkver": {
+        "github": "https://github.com/CarlGao4/Demucs-Gui/releases/latest"
     },
     "autoupdate": {
         "architecture": {
