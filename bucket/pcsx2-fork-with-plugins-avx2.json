@@ -12,6 +12,7 @@
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
     "url": "https://github.com/ASI-Factory/PCSX2-Fork-With-Plugins/releases/download/latest/PCSX2Fork-Windows-x64-Clang-AVX2.zip",
+    "hash": "ba377965c208eebd701ca065f6d046c57770f7f344832b3bb9300df189f46916",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
