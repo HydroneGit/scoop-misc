@@ -1,12 +1,12 @@
 {
-    "version": "9ed76fb",
+    "version": "e39f8bf",
     "description": "Xash3D FWGS engine",
     "homepage": "https://github.com/FWGS/xash3d-fwgs/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
             "url": "https://github.com/FWGS/xash3d-fwgs/releases/download/continuous/xash3d-fwgs-win32-amd64.7z",
-            "hash": "1692720eadf403e0d1cfdcab4fca738dca5b55026075dc0136d7bf4e24995170"
+            "hash": "ebc3af5ec8218ddac1fca664b7794638654071dba00ef73ae56b44761de9e757"
         }
     },
     "persist": "valve",
